@@ -4,8 +4,6 @@ const p = document.getElementById("key")
 const param = new URLSearchParams(window.location.search)
 const key = BigInt(param.get("key"))
 
-console.log(key)
-
 function decimalToString(dec) {
 	let hex = dec.toString(16).padStart(20, "0")
 
