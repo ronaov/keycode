@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    box-sizing: border-box;
+}
+
+#background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://dl.ops.kgtw.garenanow.com/CHT/HeroTrainingLoadingNew_B36/12912.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#black {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame {
+    width: 80%;
+    height: 57px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    transition: height 0.3s ease;
+}
+
+#title {
+    text-align: center;
+    margin: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+#getcode {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: 700;
+    transition: 0.1s ease;
+    padding-top: 2px;
+    box-shadow: 0 0 5px black;
+    color: white;
+}
+
+#getcode:active {
+    transform: scale(0.95);
+}
+
+#key {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    margin-top: 13px;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#key:active {
+    transform: scale(0.9);
+}
