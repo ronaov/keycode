@@ -3,6 +3,10 @@ const frame = document.getElementById("frame")
 const p = document.getElementById("key")
 const param = new URLSearchParams(window.location.search)
 const key = BigInt(param.get("key"))
+//const id = param.get("id")
+const id = "11212"
+const bg = document.getElementById("background")
+bg.style.backgroundImage = `url("https://dl.ops.kgtw.garenanow.com/CHT/HeroTrainingLoadingNew_B36/${id}.jpg")`
 
 function decimalToString(dec) {
 	let hex = dec.toString(16).padStart(20, "0")
