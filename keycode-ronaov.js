@@ -2,7 +2,9 @@ const btn = document.getElementById("getcode")
 const frame = document.getElementById("frame")
 const p = document.getElementById("key")
 const param = new URLSearchParams(window.location.search)
-const key = bigInt(param.get("key"))
+const key = BigInt(param.get("key"))
+
+console.log(key)
 
 function decimalToString(dec) {
 	let hex = dec.toString(16).padStart(20, "0")
